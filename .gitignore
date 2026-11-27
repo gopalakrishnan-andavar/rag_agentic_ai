@@ -1,0 +1,42 @@
+# --- Secrets: never commit ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- Python bytecode and caches ---
+__pycache__/
+*.py[cod]
+*$py.class
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+
+# --- Packaging / build output ---
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Local caches and run artefacts (e.g. pickled LLM results) ---
+*.pkl
+*.pickle
+.cache/
+
+# --- Editors and OS ---
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
